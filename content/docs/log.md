@@ -48,7 +48,7 @@ Currently there are two predefined formats.
 
 Log rotation is enabled by default. Log files will be automatically maintained when they get large or old.
 
-You can override rotation by opening a block on your first line, which can be any of the variations described above:
+You can customize rotation by opening a block on your first line, which can be any of the variations described above:
 
 <code class="block"><span class="hl-directive">log</span> <span class="hl-arg">...</span> {
     <span class="hl-subdirective">rotate_size</span> <i>maxsize</i>
