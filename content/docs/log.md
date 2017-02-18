@@ -46,7 +46,7 @@ Currently there are two predefined formats.
 
 ### Log Rotation
 
-Log rotation is enabled by default. Log files will be automatically maintained when they get large or old.
+Log rotation is enabled by default. Log files will be automatically rotated when they get large and deleted when they get old.
 
 You can customize rotation by opening a block on your first line, which can be any of the variations described above:
 
@@ -78,6 +78,6 @@ With custom rotation:
 
 <code class="block"><span class="hl-directive">log</span> <span class="hl-arg">access.log</span> {
     <span class="hl-subdirective">rotate_size</span> 200 <span class="hl-comment"># Rotate after 200 MB; the default is 100 MB</span>
-    <span class="hl-subdirective">rotate_age</span>  30  <span class="hl-comment"># Keep log files for 30 days; the default is 14 days</span>
+    <span class="hl-subdirective">rotate_age</span>  30  <span class="hl-comment"># Keep old log files for 30 days; the default is 14 days</span>
     <span class="hl-subdirective">rotate_keep</span> 20  <span class="hl-comment"># Keep at most 20 log files; the default is 20 log files</span>
 }</code>
