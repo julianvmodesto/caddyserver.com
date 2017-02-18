@@ -57,7 +57,7 @@ Make errors visible to the client (for debugging only):
 
 <code class="block"><span class="hl-directive">errors</span> <span class="hl-arg">visible</span></code>
 
-Maintain error log files automatically:
+By default, error log files will rotate as files get larger and deleted as files get older. The default log rotation options can be customized:
 
 <code class="block"><span class="hl-directive">errors error.log</span> {
     <span class="hl-subdirective">rotate_size</span> 50 <span class="hl-comment"># Rotate after 50 MB; the default is 100 MB</span>
